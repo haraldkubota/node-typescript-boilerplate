@@ -1,6 +1,6 @@
 {
   "name": "node-typescript-boilerplate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
   "engineStrict": true,
   "engines": {
@@ -20,9 +20,14 @@
     "tsutils": "~3.0.0",
     "typescript": "~3.0.1"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/haraldkubota/node-typescript-boilerplate.git"
+  },
   "scripts": {
     "clean": "rimraf coverage build tmp",
-    "build": "tsc -p tsconfig.release.json",
+    "build-release": "tsc -p tsconfig.release.json",
+    "build": "tsc",
     "watch": "tsc -w -p tsconfig.release.json",
     "lint": "tslint -t stylish --project \"tsconfig.json\"",
     "pretest": "npm run lint",

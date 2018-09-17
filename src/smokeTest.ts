@@ -1,6 +1,6 @@
 export module SmokeTest {
-  export function helloWorld() {
+  export function helloWorld(s: string) {
     // tslint:disable no-console
-    console.log("Hello world!")
+    console.log("Hello world and", s, "!")
   }
 }

@@ -33,7 +33,7 @@ describe('greeter function', () => {
 
 describe("smokeTest", () => {
   it("should say 'hello world'", () => {
-    SmokeTest.helloWorld();
+    SmokeTest.helloWorld("Bello");
     assert.ok(true);
   })
 });

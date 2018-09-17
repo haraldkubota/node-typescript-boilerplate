@@ -1,10 +1,17 @@
+import * as main from "./main";
 
-async function f()
+async function sampleApp()
 {
-  const greet = require("./main.js");
-  console.log("greet=", greet);
-  console.log(await greet.greeter("Harald"));
-  console.log("Done")
+  // tslint:disable:no-console
+  console.log("main=", main);
+  // tslint:disable:no-console no-unsafe-any
+  console.log(await main.greeter("Harald"));
 }
 
-f();
+sampleApp().then(() => {
+    // tslint:disable:no-console
+    console.log("Done");
+  }).catch((e:string) => {
+  console.error("Error: ", e);
+});
+

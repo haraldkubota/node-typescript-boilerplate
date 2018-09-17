@@ -25,7 +25,7 @@
     "url" : "https://github.com/haraldkubota/node-typescript-boilerplate.git"
   },
   "scripts": {
-    "clean": "rimraf coverage build tmp",
+    "clean": "rimraf coverage build tmp dist",
     "build-release": "tsc -p tsconfig.release.json",
     "build": "tsc",
     "watch": "tsc -w -p tsconfig.release.json",

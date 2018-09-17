@@ -8,6 +8,9 @@
     "tslint-microsoft-contrib",
     "tslint-config-prettier"
   ],
+  "jsRules": {
+    "no-empty": true
+  },
   "rules": {
     "mocha-no-side-effect-code": false,
     "missing-jsdoc": false,

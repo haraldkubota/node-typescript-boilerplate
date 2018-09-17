@@ -1,4 +1,6 @@
+import * as assert from 'assert';
 import { Delays, greeter } from '../src/main';
+import { SmokeTest } from '../src/smokeTest';
 
 describe('greeter function', () => {
   // Read more about fake timers: http://facebook.github.io/jest/docs/en/timer-mocks.html#content
@@ -27,4 +29,11 @@ describe('greeter function', () => {
   it('greets a user with `Hello, {name}` message', () => {
     expect(hello).toBe(`Hello, ${name}`);
   });
+});
+
+describe("smokeTest", () => {
+  it("should say 'hello world'", () => {
+    SmokeTest.helloWorld();
+    assert.ok(true);
+  })
 });
